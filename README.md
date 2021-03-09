@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Quiz Answer
 
-```bash
-npm run dev
-# or
+I normally use next.js as my main framework. So sorry for not using angular like you prefer
+
+First, clone this repo and run yarn install
+
+```
+yarn install
+```
+then run development server
+```
 yarn dev
 ```
+## Section 1
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- question 1 - Open [http://localhost:3000/sec1q1](http://localhost:3000/sec1q1) with your browser to see the result. 1.1 and 1.2 I think can use the same code.
+- question 2 - Open [http://localhost:3000/sec1q2](http://localhost:3000/sec1q2).
+- question 3 - Open [http://localhost:3000/sec1q3](http://localhost:3000/sec1q3).
+- question 4 - Open [http://localhost:3000/sec1q4.html](http://localhost:3000/sec1q4.html).
+- question 5 - Open [http://localhost:3000/memleak.html](http://localhost:3000/memleak.html). I fixed it by delete Javascript Object that Attach to the dom before the dom node is removed.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+  delete closeBtn.tmp
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I investigate it by using Chrome dev tools (Memory tab and select Heap snapshots) then i click show dialog and see what different between snapshots. It will keep increase around 25MB like you said. After i fixed it It does not happen again.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Section 2
+ - question 1 - Open [http://localhost:3000/sec2q1](http://localhost:3000/sec2q1).
+ - question 2 - Open [http://localhost:3000/sec2q2](http://localhost:3000/sec2q2).
+ - question 3 - I spent a lot of time fixing it first. But still can't figure out how to do it.

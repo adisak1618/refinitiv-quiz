@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  background: red;
   height: 100vh;
   width: 100%;
 `
@@ -17,20 +16,20 @@ const Column = styled.div`
 `
 
 const Column1 = styled(Column)`
-  background: green;
+  background: #ccc;
   order: 1;
   width: 200px;
 `
 
 const Column2 = styled(Column)`
-  background: blue;
+  background: #FFF;
   flex: 1;
   order: 2;
   min-width: 100px;
 `
 
 const Column3 = styled(Column)`
-  background: yellow;
+  background: #ccc;
   width: 300px;
   order: 3;
 `
